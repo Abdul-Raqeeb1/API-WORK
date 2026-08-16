@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Profile{% endblock %}
+
+{% block body %}
+<div class="profile-page card-surface">
+  <div class="profile-banner"></div>
+
+  <div class="profile-identity">
+    <div class="avatar xl avatar-gradient-3">MS</div>
+    <div class="profile-details">
+      <strong>Mila Stone</strong>
+      <span>@mila.stone</span>
+      <small>Product lead • Building community experiences</small>
+    </div>
+  </div>
+
+  <div class="profile-grid">
+    <div class="panel-box">
+      <div class="tabs">
+        <button class="tab active" type="button">Overview</button>
+        <button class="tab" type="button">Activity</button>
+        <button class="tab" type="button">Badges</button>
+      </div>
+
+      <div class="info-list">
+        <div class="info-item"><span>Location</span><strong>San Francisco, CA</strong></div>
+        <div class="info-item"><span>Role</span><strong>Founder</strong></div>
+        <div class="info-item"><span>Bio</span><strong>Designing calm digital spaces for teams.</strong></div>
+      </div>
+    </div>
+
+    <div class="panel-box">
+      <h3>Community stats</h3>
+      <div class="profile-stats">
+        <div><strong>12</strong><span>Servers</span></div>
+        <div><strong>486</strong><span>Messages</span></div>
+        <div><strong>4.9k</strong><span>Reactions</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

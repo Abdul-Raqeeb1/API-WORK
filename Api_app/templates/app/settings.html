@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Settings{% endblock %}
+
+{% block body %}
+<div class="settings-shell card-surface">
+  <div class="settings-layout">
+    <aside class="settings-nav">
+      <button class="settings-link active" type="button">Profile</button>
+      <button class="settings-link" type="button">Privacy</button>
+      <button class="settings-link" type="button">Notifications</button>
+      <button class="settings-link" type="button">Appearance</button>
+      <button class="settings-link" type="button">Security</button>
+    </aside>
+
+    <section class="settings-content">
+      <div class="setting-card">
+        <h3>Profile preferences</h3>
+        <div class="setting-row">
+          <div class="setting-copy">
+            <strong>Show online status</strong>
+            <p>Let others see when you are active.</p>
+          </div>
+          <button class="toggle-switch on" type="button" aria-label="Toggle online status"></button>
+        </div>
+
+        <div class="setting-row">
+          <div class="setting-copy">
+            <strong>Display pronouns</strong>
+            <p>Show your pronouns in your profile card.</p>
+          </div>
+          <button class="toggle-switch" type="button" aria-label="Toggle pronouns"></button>
+        </div>
+      </div>
+
+      <div class="setting-card">
+        <h3>Notification settings</h3>
+        <div class="setting-row">
+          <div class="setting-copy">
+            <strong>Push notifications</strong>
+            <p>Receive instant updates on your device.</p>
+          </div>
+          <button class="toggle-switch on" type="button" aria-label="Toggle push notifications"></button>
+        </div>
+        <div class="setting-row">
+          <div class="setting-copy">
+            <strong>Mentions and replies</strong>
+            <p>Alert when someone mentions you or replies.</p>
+          </div>
+          <button class="toggle-switch on" type="button" aria-label="Toggle mentions"></button>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

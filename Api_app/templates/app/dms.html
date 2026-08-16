@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | DMs{% endblock %}
+
+{% block body %}
+<div class="dms-layout">
+  <aside class="dm-sidebar">
+    <div class="section-heading">
+      <span class="eyebrow">Messages</span>
+      <h3>Direct</h3>
+    </div>
+
+    <div class="sidebar-search dm-search">
+      <input type="text" class="search-input" placeholder="Search people" />
+    </div>
+
+    <div class="dm-list">
+      <div class="dm-item active">
+        <div class="user-row">
+          <div class="avatar sm avatar-gradient-1">AR</div>
+          <div>
+            <strong>Ariana</strong>
+            <small>Last active 2m ago</small>
+          </div>
+        </div>
+        <span class="chip">3</span>
+      </div>
+      <div class="dm-item">
+        <div class="user-row">
+          <div class="avatar sm avatar-gradient-2">MR</div>
+          <div>
+            <strong>Marcus</strong>
+            <small>Shared a file</small>
+          </div>
+        </div>
+      </div>
+      <div class="dm-item">
+        <div class="user-row">
+          <div class="avatar sm avatar-gradient-4">LN</div>
+          <div>
+            <strong>Lina</strong>
+            <small>Ready for review</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="dm-main">
+    <div class="dm-header">
+      <div class="user-row">
+        <div class="avatar md avatar-gradient-1">AR</div>
+        <div>
+          <strong>Ariana</strong>
+          <small>Product Manager</small>
+        </div>
+      </div>
+      <div class="header-tools">
+        <button class="icon-btn" type="button">☎</button>
+        <button class="icon-btn" type="button">⋯</button>
+      </div>
+    </div>
+
+    <div class="dm-chat">
+      <article class="message-row group">
+        <div class="avatar lg avatar-gradient-1">AR</div>
+        <div class="message-content">
+          <div class="meta"><span class="name">Ariana</span><span class="time">09:11</span></div>
+          <p class="message-text">I’ve revised the launch narrative and included the customer quotes you requested.</p>
+        </div>
+      </article>
+
+      <article class="message-row group self">
+        <div class="message-content">
+          <div class="meta"><span class="name">You</span><span class="time">09:14</span></div>
+          <p class="message-text">Perfect. I’ll share the first draft internally after lunch and we can tighten the final copy.</p>
+        </div>
+      </article>
+
+      <article class="message-row group">
+        <div class="avatar lg avatar-gradient-1">AR</div>
+        <div class="message-content">
+          <div class="meta"><span class="name">Ariana</span><span class="time">09:18</span></div>
+          <p class="message-text">Amazing. I’ll also attach the updated roadmap summary so we keep alignment.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="composer-wrap">
+      <div class="composer-toolbar">
+        <button class="icon-btn" type="button">😊</button>
+        <button class="icon-btn" type="button">📎</button>
+      </div>
+      <div class="composer-area">
+        <textarea rows="1" placeholder="Message Ariana"></textarea>
+        <div class="composer-actions">
+          <button class="btn btn-primary" type="button">Send</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+{% endblock %}

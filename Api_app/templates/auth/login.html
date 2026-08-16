@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Login{% endblock %}
+
+{% block body %}
+<div class="auth-page">
+  <div class="auth-card card-surface">
+    <div class="auth-brand">
+      <div class="brand-mark">N</div>
+      <div>
+        <strong>Nexora</strong>
+        <span>Welcome back</span>
+      </div>
+    </div>
+
+    <div class="auth-header">
+      <h1>Sign in</h1>
+      <p>Access your communities, conversations, and settings.</p>
+    </div>
+
+    <form class="auth-form">
+      <label class="field-group">
+        <span>Email or username</span>
+        <input type="text" value="mila@studio.com" />
+      </label>
+
+      <label class="field-group">
+        <span>Password</span>
+        <input type="password" value="password123" />
+      </label>
+
+      <div class="row-between">
+        <label class="checkbox-row">
+          <input type="checkbox" checked />
+          <span>Keep me signed in</span>
+        </label>
+        <a href="#" class="text-link">Forgot password?</a>
+      </div>
+
+      <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+    </form>
+
+    <div class="divider"><span>or continue with</span></div>
+
+    <div class="social-grid">
+      <button class="social-btn" type="button">Google</button>
+      <button class="social-btn" type="button">GitHub</button>
+    </div>
+
+    <p class="auth-footer">
+      Need an account? <a href="register.html" class="text-link">Create one</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

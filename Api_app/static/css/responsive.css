@@ -1,0 +1,110 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 840px) {
+  .topbar-landing {
+    padding: 1rem;
+  }
+
+  .auth-card,
+  .auth-card.wider {
+    padding: 1.3rem;
+  }
+
+  .auth-form.two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-row,
+  .nav-actions,
+  .composer-actions,
+  .modal-actions {
+    flex-wrap: wrap;
+  }
+
+  .channel-sidebar {
+    display: none;
+  }
+
+  .app-layout {
+    grid-template-columns: 70px 1fr;
+  }
+
+  .main-header {
+    padding: 0.9rem 0.8rem;
+  }
+
+  .composer-area {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .composer-actions {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-section {
+    margin-top: 1rem;
+    padding: 0 0.8rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.4rem;
+  }
+
+  .feature-band {
+    padding: 0 0.8rem;
+  }
+
+  .topbar {
+    padding: 1rem 0.8rem;
+  }
+
+  .brand-copy span {
+    display: none;
+  }
+
+  .nav-actions .btn:first-child {
+    display: none;
+  }
+
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .server-sidebar {
+    display: none;
+  }
+
+  .main-panel {
+    grid-column: auto;
+    min-height: calc(100vh - 70px);
+  }
+
+  .chat-feed {
+    padding: 0.8rem 0.65rem 0.5rem;
+  }
+
+  .message-content {
+    max-width: 100%;
+  }
+
+  .message-row {
+    gap: 0.55rem;
+  }
+
+  .mini-metrics {
+    gap: 1rem;
+  }
+}

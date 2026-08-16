@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Home{% endblock %}
+
+{% block body %}
+<div class="landing-page">
+  <header class="topbar topbar-landing">
+    <div class="brand-wrap">
+      <div class="brand-mark">N</div>
+      <div class="brand-copy">
+        <strong>Nexora</strong>
+        <span>Community hub</span>
+      </div>
+    </div>
+
+    <nav class="landing-nav">
+      <a href="#features">Features</a>
+      <a href="#discover">Discover</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="btn btn-ghost" type="button">Log in</button>
+      <button class="btn btn-primary" type="button">Get started</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-copy">
+        <span class="eyebrow">Built for modern communities</span>
+        <h1>Bring your people together with a calmer, brighter way to chat.</h1>
+        <p>
+          Create channels, host events, share moments, and keep every conversation moving with clear context and thoughtful design.
+        </p>
+
+        <div class="cta-row">
+          <button class="btn btn-primary btn-lg" type="button">Create your community</button>
+          <button class="btn btn-secondary btn-lg" type="button">Watch demo</button>
+        </div>
+
+        <div class="mini-metrics">
+          <div>
+            <strong>50k+</strong>
+            <span>communities</span>
+          </div>
+          <div>
+            <strong>2.4M</strong>
+            <span>messages daily</span>
+          </div>
+          <div>
+            <strong>99.9%</strong>
+            <span>uptime</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-preview card-surface">
+        <div class="preview-header">
+          <div class="preview-title">
+            <span class="dot online"></span>
+            Product team
+          </div>
+          <button class="chip ghost">Live</button>
+        </div>
+
+        <div class="preview-chat">
+          <div class="message-list compact">
+            <div class="message-row incoming">
+              <div class="avatar md avatar-gradient-1">AL</div>
+              <div class="message-content">
+                <div class="meta"><span class="name">Alyssa</span><span class="time">09:42</span></div>
+                <p>New prototype is ready for review</p>
+              </div>
+            </div>
+            <div class="message-row outgoing">
+              <div class="message-content">
+                <div class="meta"><span class="name">You</span><span class="time">09:43</span></div>
+                <p>Perfect. I’ll share the launch checklist this afternoon.</p>
+              </div>
+            </div>
+            <div class="message-row incoming">
+              <div class="avatar md avatar-gradient-2">MJ</div>
+              <div class="message-content">
+                <div class="meta"><span class="name">Marcus</span><span class="time">09:45</span></div>
+                <p>Also queued the community onboarding flow for QA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="preview-footer">
+          <button class="icon-btn" type="button">🙂</button>
+          <input type="text" placeholder="Message #product-team" />
+          <button class="btn btn-primary" type="button">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-band" id="features">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Lightning-fast chat</h3>
+        <p>Find the right people and the right context without friction.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👥</div>
+        <h3>Communities first</h3>
+        <p>Organize teams, clubs, and groups with flexible permissions.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔒</div>
+        <h3>Trusted by teams</h3>
+        <p>Thoughtful moderation controls and role-based management.</p>
+      </div>
+    </section>
+
+    <section class="showcase-section" id="discover">
+      <div class="section-heading">
+        <span class="eyebrow">Designed for focus</span>
+        <h2>Everything you need in one place</h2>
+      </div>
+
+      <div class="split-grid">
+        <div class="card-surface showcase-panel">
+          <div class="panel-head">
+            <span>Today’s activity</span>
+            <button class="chip">12 updates</button>
+          </div>
+          <ul class="activity-list">
+            <li><span class="status green"></span> Design review started</li>
+            <li><span class="status blue"></span> New onboarding flow published</li>
+            <li><span class="status orange"></span> 3 new invites sent</li>
+          </ul>
+        </div>
+
+        <div class="card-surface showcase-panel">
+          <div class="panel-head">
+            <span>Focused channels</span>
+            <button class="chip ghost">Clean layout</button>
+          </div>
+          <div class="channel-stack">
+            <div class="channel-pill active"># product-updates</div>
+            <div class="channel-pill"># design</div>
+            <div class="channel-pill"># support</div>
+            <div class="channel-pill"># launch</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+{% endblock %}

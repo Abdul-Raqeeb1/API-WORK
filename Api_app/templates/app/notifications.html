@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Notifications{% endblock %}
+
+{% block body %}
+<div class="settings-shell card-surface">
+  <div class="settings-layout">
+    <aside class="settings-nav">
+      <button class="settings-link active" type="button">Inbox</button>
+      <button class="settings-link" type="button">Mentions</button>
+      <button class="settings-link" type="button">Replies</button>
+      <button class="settings-link" type="button">Activity</button>
+    </aside>
+
+    <section class="settings-content">
+      <div class="notification-panel visible" style="position: relative; right: auto; top: auto; width: 100%; display: block;">
+        <div class="notification-header">
+          <h3>Notifications</h3>
+          <button class="chip ghost" type="button">Mark all read</button>
+        </div>
+        <div class="notification-list">
+          <div class="notification-item">
+            <span class="notification-badge"></span>
+            <div>
+              <strong>Jordan replied to you</strong>
+              <p>“I added the new motion details to the deck.”</p>
+              <small>2 minutes ago</small>
+            </div>
+          </div>
+          <div class="notification-item">
+            <span class="notification-badge"></span>
+            <div>
+              <strong>Launch room updated</strong>
+              <p>Three new comments were posted in the release checklist.</p>
+              <small>14 minutes ago</small>
+            </div>
+          </div>
+          <div class="notification-item">
+            <span class="notification-badge"></span>
+            <div>
+              <strong>Mentions</strong>
+              <p>@mila.stone approved the onboarding preview.</p>
+              <small>1 hour ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

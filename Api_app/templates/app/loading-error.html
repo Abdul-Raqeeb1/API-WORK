@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Loading & Errors{% endblock %}
+
+{% block body %}
+<div class="auth-page">
+  <div class="auth-card card-surface">
+    <div class="loading-state">
+      <div class="loading-bars" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h3>Syncing conversations</h3>
+      <p>Please wait while the latest updates are loaded.</p>
+    </div>
+
+    <div class="error-card" style="margin-top: 1rem;">
+      <h3>Connection issue</h3>
+      <p>We couldn’t refresh your inbox. Check your connection and try again.</p>
+      <button class="btn btn-primary" type="button">Retry</button>
+    </div>
+  </div>
+</div>
+{% endblock %}

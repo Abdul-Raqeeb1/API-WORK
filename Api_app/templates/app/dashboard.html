@@ -1,0 +1,229 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Dashboard{% endblock %}
+
+{% block body %}
+<div class="app-layout dashboard-layout">
+  <aside class="server-sidebar">
+    <div class="brand-mini">N</div>
+    <div class="server-list">
+      <button class="server-item active" type="button"><span>N</span></button>
+      <button class="server-item" type="button"><span>V</span></button>
+      <button class="server-item" type="button"><span>S</span></button>
+      <button class="server-item add" type="button">+</button>
+    </div>
+  </aside>
+
+  <aside class="channel-sidebar">
+    <div class="sidebar-header">
+      <div>
+        <strong>Nexora Studio</strong>
+        <small>Creative workspace</small>
+      </div>
+      <button class="icon-btn" type="button">✦</button>
+    </div>
+
+    <div class="sidebar-search">
+      <input type="text" placeholder="Search channels" />
+    </div>
+
+    <nav class="nav-section">
+      <div class="section-label">Overview</div>
+      <a href="#" class="nav-item active"># announcements</a>
+      <a href="#" class="nav-item"># design-briefs</a>
+      <a href="#" class="nav-item"># launch-checklist</a>
+      <a href="#" class="nav-item"># client-feedback</a>
+    </nav>
+
+    <div class="nav-section">
+      <div class="section-label row-with-action">
+        <span>Voice channels</span>
+        <button class="mini-btn" type="button">+</button>
+      </div>
+      <a href="#" class="nav-item voice">🎙️ Project room</a>
+      <a href="#" class="nav-item voice">🎧 Design sync</a>
+      <a href="#" class="nav-item voice">🗂️ Studio lounge</a>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="user-card compact">
+        <div class="avatar sm avatar-gradient-3">MS</div>
+        <div>
+          <strong>Mila Stone</strong>
+          <small>Admin</small>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-panel">
+    <header class="main-header">
+      <div class="channel-title-wrap">
+        <span class="channel-hash">#</span>
+        <div>
+          <h2>announcements</h2>
+          <small>Community updates and launches</small>
+        </div>
+      </div>
+
+      <div class="header-tools">
+        <button class="icon-btn" type="button" data-toggle="search-panel">⌕</button>
+        <button class="icon-btn" type="button">🔔</button>
+        <button class="icon-btn" type="button">⚙️</button>
+      </div>
+    </header>
+
+    <div class="chat-surface">
+      <div class="chat-feed">
+        <div class="date-divider"><span>Today</span></div>
+
+        <article class="message-row group">
+          <div class="avatar lg avatar-gradient-1">AR</div>
+          <div class="message-content">
+            <div class="meta"><span class="name">Ariana</span><span class="time">09:18</span></div>
+            <p class="message-text">We’ve moved the launch checklist into the final review round. Please check the highlighted tasks in the shared board before 3 PM.</p>
+            <div class="reply-card">
+              <span class="reply-author">Mila</span>
+              <p>QA feedback is queued for final approval</p>
+            </div>
+            <div class="reaction-row">
+              <button class="reaction-badge" type="button">👍 12</button>
+              <button class="reaction-badge" type="button">🔥 4</button>
+              <button class="reaction-badge" type="button">🎉 8</button>
+            </div>
+          </div>
+          <div class="message-actions">
+            <button type="button">↩</button>
+            <button type="button">❤</button>
+            <button type="button">⋯</button>
+          </div>
+        </article>
+
+        <article class="message-row group highlight mention">
+          <div class="avatar lg avatar-gradient-2">JS</div>
+          <div class="message-content">
+            <div class="meta"><span class="name">Jordan</span><span class="time">09:26</span></div>
+            <p class="message-text"><span class="mention">@mila.stone</span> the new onboarding preview is ready. I added screenshots and a short walkthrough for the team.</p>
+            <div class="media-card">
+              <div class="media-preview">UI Mockup</div>
+            </div>
+            <div class="reaction-row">
+              <button class="reaction-badge" type="button">👀 9</button>
+            </div>
+          </div>
+          <div class="message-actions">
+            <button type="button">↩</button>
+            <button type="button">❤</button>
+            <button type="button">⋯</button>
+          </div>
+        </article>
+
+        <div class="unread-divider"><span>New messages</span></div>
+
+        <article class="message-row group">
+          <div class="avatar lg avatar-gradient-3">MS</div>
+          <div class="message-content">
+            <div class="meta"><span class="name">Mila Stone</span><span class="time">09:32</span><span class="edited">edited</span></div>
+            <p class="message-text">Thanks everyone. I’ve merged the final copy and will share the announcement link in the next hour.</p>
+            <div class="reply-card">
+              <span class="reply-author">Jordan</span>
+              <p>Preview and walkthrough are ready</p>
+            </div>
+          </div>
+          <div class="message-actions">
+            <button type="button">↩</button>
+            <button type="button">❤</button>
+            <button type="button">⋯</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="composer-wrap">
+        <div class="composer-toolbar">
+          <button class="icon-btn" type="button">＋</button>
+          <button class="icon-btn" type="button">😊</button>
+          <button class="icon-btn" type="button">🎙️</button>
+        </div>
+        <div class="composer-area">
+          <textarea rows="1" placeholder="Message #announcements"></textarea>
+          <div class="composer-actions">
+            <button class="btn btn-ghost" type="button">Attach</button>
+            <button class="btn btn-primary" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="member-panel">
+    <div class="panel-header">
+      <h3>Members</h3>
+      <button class="chip ghost">24 online</button>
+    </div>
+
+    <div class="member-list">
+      <div class="member-item online">
+        <div class="avatar sm avatar-gradient-1">AR</div>
+        <div>
+          <strong>Ariana</strong>
+          <small>Community lead</small>
+        </div>
+      </div>
+      <div class="member-item online">
+        <div class="avatar sm avatar-gradient-2">JS</div>
+        <div>
+          <strong>Jordan</strong>
+          <small>Design</small>
+        </div>
+      </div>
+      <div class="member-item online">
+        <div class="avatar sm avatar-gradient-3">MK</div>
+        <div>
+          <strong>Mateo</strong>
+          <small>Product</small>
+        </div>
+      </div>
+      <div class="member-item muted">
+        <div class="avatar sm avatar-gradient-4">LG</div>
+        <div>
+          <strong>Lena</strong>
+          <small>Marketing</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-block">
+      <div class="panel-header small">
+        <h4>Pinned</h4>
+      </div>
+      <div class="pinned-card">
+        <span class="pin-label">Pinned</span>
+        <p>Launch checklist is open for review until Friday.</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="modal-backdrop" data-modal="create-community">
+  <div class="modal-panel">
+    <div class="modal-head">
+      <h3>Create community</h3>
+      <button class="icon-btn modal-close" type="button">✕</button>
+    </div>
+    <div class="modal-body">
+      <label class="field-group">
+        <span>Community name</span>
+        <input type="text" value="Sunset Labs" />
+      </label>
+      <label class="field-group">
+        <span>Short description</span>
+        <textarea rows="3">Design and product experiments for the next release cycle.</textarea>
+      </label>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" type="button">Cancel</button>
+        <button class="btn btn-primary" type="button">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

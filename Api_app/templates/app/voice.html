@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Voice{% endblock %}
+
+{% block body %}
+<div class="voice-layout card-surface">
+  <aside class="panel-box">
+    <div class="panel-header">
+      <h3>Voice channels</h3>
+      <button class="mini-btn" type="button">+</button>
+    </div>
+    <div class="voice-list" style="margin-top: 1rem;">
+      <div class="voice-channel-item active">
+        <strong>Product room</strong>
+        <small>4 members live</small>
+      </div>
+      <div class="voice-channel-item">
+        <strong>Design sync</strong>
+        <small>2 members live</small>
+      </div>
+      <div class="voice-channel-item">
+        <strong>Quiet lounge</strong>
+        <small>1 member live</small>
+      </div>
+    </div>
+  </aside>
+
+  <main class="voice-room">
+    <div class="panel-header">
+      <div>
+        <h3>Product room</h3>
+        <small>Live discussion</small>
+      </div>
+      <button class="chip ghost">11:42</button>
+    </div>
+
+    <div class="voice-users">
+      <div class="voice-user-card speaking">
+        <div class="avatar sm avatar-gradient-1">MS</div>
+        <div>
+          <strong>Mila</strong>
+          <small>Speaking</small>
+        </div>
+      </div>
+      <div class="voice-user-card">
+        <div class="avatar sm avatar-gradient-2">AN</div>
+        <div>
+          <strong>Anika</strong>
+          <small>Listening</small>
+        </div>
+      </div>
+      <div class="voice-user-card">
+        <div class="avatar sm avatar-gradient-3">JR</div>
+        <div>
+          <strong>Jules</strong>
+          <small>Muted</small>
+        </div>
+      </div>
+      <div class="voice-user-card speaking">
+        <div class="avatar sm avatar-gradient-4">LM</div>
+        <div>
+          <strong>Lina</strong>
+          <small>Speaking</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="voice-controls">
+      <button class="round-toggle primary" type="button">🎙️</button>
+      <button class="round-toggle" type="button">🎧</button>
+      <button class="round-toggle danger" type="button">✕</button>
+    </div>
+  </main>
+
+  <aside class="panel-box">
+    <div class="panel-header">
+      <h3>Voice settings</h3>
+    </div>
+    <div class="voice-user-list" style="margin-top: 1rem;">
+      <div class="setting-row">
+        <div class="setting-copy">
+          <strong>Microphone</strong>
+          <p>Default input</p>
+        </div>
+        <button class="chip" type="button">Built-in</button>
+      </div>
+      <div class="setting-row">
+        <div class="setting-copy">
+          <strong>Output</strong>
+          <p>Default speakers</p>
+        </div>
+        <button class="chip" type="button">AirPods</button>
+      </div>
+      <div class="setting-row">
+        <div class="setting-copy">
+          <strong>Noise filter</strong>
+          <p>Voice isolate</p>
+        </div>
+        <button class="toggle-switch on" type="button" aria-label="Toggle noise filter"></button>
+      </div>
+    </div>
+  </aside>
+</div>
+{% endblock %}

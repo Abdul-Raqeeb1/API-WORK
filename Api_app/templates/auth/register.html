@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Register{% endblock %}
+
+{% block body %}
+<div class="auth-page">
+  <div class="auth-card card-surface wider">
+    <div class="auth-brand">
+      <div class="brand-mark">N</div>
+      <div>
+        <strong>Nexora</strong>
+        <span>Build your space</span>
+      </div>
+    </div>
+
+    <div class="auth-header">
+      <h1>Create account</h1>
+      <p>Start your next community with a thoughtful, modern workspace.</p>
+    </div>
+
+    <form class="auth-form two-column">
+      <label class="field-group">
+        <span>First name</span>
+        <input type="text" value="Mila" />
+      </label>
+
+      <label class="field-group">
+        <span>Last name</span>
+        <input type="text" value="Stone" />
+      </label>
+
+      <label class="field-group full-span">
+        <span>Email</span>
+        <input type="email" value="mila@studio.com" />
+      </label>
+
+      <label class="field-group full-span">
+        <span>Username</span>
+        <input type="text" value="mila.stone" />
+      </label>
+
+      <label class="field-group">
+        <span>Password</span>
+        <input type="password" value="password123" />
+      </label>
+
+      <label class="field-group">
+        <span>Confirm</span>
+        <input type="password" value="password123" />
+      </label>
+
+      <label class="checkbox-row full-span">
+        <input type="checkbox" checked />
+        <span>I agree to the Terms and Community Guidelines.</span>
+      </label>
+
+      <button class="btn btn-primary btn-block full-span" type="submit">Create account</button>
+    </form>
+
+    <p class="auth-footer">
+      Already have an account? <a href="login.html" class="text-link">Sign in</a>
+    </p>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Community Settings{% endblock %}
+
+{% block body %}
+<div class="settings-shell card-surface">
+  <div class="settings-layout">
+    <aside class="settings-nav">
+      <button class="settings-link active" type="button">Overview</button>
+      <button class="settings-link" type="button">Members</button>
+      <button class="settings-link" type="button">Roles</button>
+      <button class="settings-link" type="button">Permissions</button>
+      <button class="settings-link" type="button">Security</button>
+    </aside>
+
+    <section class="settings-content">
+      <div class="setting-card">
+        <h3>Community details</h3>
+        <div class="info-list">
+          <div class="info-item"><span>Name</span><strong>Northstar Studio</strong></div>
+          <div class="info-item"><span>Owner</span><strong>Mila Stone</strong></div>
+          <div class="info-item"><span>Visibility</span><strong>Private</strong></div>
+        </div>
+      </div>
+
+      <div class="setting-card">
+        <h3>Roles and permissions</h3>
+        <div class="role-list">
+          <div class="role-item"><span>Admin</span><span class="role-badge admin">Admin</span></div>
+          <div class="role-item"><span>Moderator</span><span class="role-badge mod">Mod</span></div>
+          <div class="role-item"><span>Member</span><span class="role-badge member">Member</span></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+{% endblock %}

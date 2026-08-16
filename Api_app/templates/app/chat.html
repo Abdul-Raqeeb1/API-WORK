@@ -1,0 +1,216 @@
+{% extends 'base.html' %}
+
+{% block title %}Nexora | Chat{% endblock %}
+
+{% block body %}
+<div class="app-layout">
+  <aside class="server-sidebar">
+    <div class="brand-mini">N</div>
+    <div class="server-list">
+      <button class="server-item active" type="button"><span>N</span></button>
+      <button class="server-item" type="button"><span>V</span></button>
+      <button class="server-item" type="button"><span>R</span></button>
+      <button class="server-item add" type="button">+</button>
+    </div>
+  </aside>
+
+  <aside class="channel-sidebar">
+    <div class="sidebar-header">
+      <div>
+        <strong>Northstar</strong>
+        <small>Product studio</small>
+      </div>
+      <button class="icon-btn" type="button">⚙️</button>
+    </div>
+
+    <div class="sidebar-search">
+      <input type="text" class="search-input" data-search placeholder="Search conversations" />
+    </div>
+
+    <nav class="nav-section">
+      <div class="section-label">Channels</div>
+      <a href="#" class="nav-item active"># product-updates</a>
+      <a href="#" class="nav-item"># design-notes</a>
+      <a href="#" class="nav-item"># customer-success</a>
+      <a href="#" class="nav-item"># launch-room</a>
+    </nav>
+
+    <div class="nav-section">
+      <div class="section-label">Direct messages</div>
+      <a href="#" class="nav-item">@Ariana</a>
+      <a href="#" class="nav-item">@Milo</a>
+      <a href="#" class="nav-item">@Lin</a>
+      <a href="#" class="nav-item">@Nia</a>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="user-card compact" data-profile-toggle>
+        <div class="avatar sm avatar-gradient-3">MS</div>
+        <div>
+          <strong>Mila Stone</strong>
+          <small>Owner</small>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-panel">
+    <header class="main-header">
+      <div class="channel-title-wrap">
+        <span class="channel-hash">#</span>
+        <div>
+          <h2>product-updates</h2>
+          <small>Announcements, milestones, and launch feedback</small>
+        </div>
+      </div>
+
+      <div class="header-tools">
+        <button class="icon-btn" type="button" data-toggle="search-panel">⌕</button>
+        <button class="icon-btn" type="button">🔔</button>
+        <button class="icon-btn" type="button" data-open-modal="create-channel">＋</button>
+      </div>
+    </header>
+
+    <div class="chat-surface">
+      <div class="chat-feed">
+        <div class="date-divider"><span>Yesterday</span></div>
+
+        <article class="message-row group">
+          <div class="avatar lg avatar-gradient-1">AN</div>
+          <div class="message-content">
+            <div class="meta"><span class="name">Anika</span><span class="time">17:20</span></div>
+            <p class="message-text">The landing page experiments are live in preview. We’re seeing a 14% lift in CTA clicks on the new stack.</p>
+            <div class="reaction-row">
+              <button type="button" class="reaction-badge">👍 7</button>
+              <button type="button" class="reaction-badge">🎯 3</button>
+            </div>
+          </div>
+          <div class="message-actions">
+            <button type="button">↩</button>
+            <button type="button">❤</button>
+            <button type="button">⋯</button>
+          </div>
+        </article>
+
+        <article class="message-row group highlight">
+          <div class="avatar lg avatar-gradient-2">JR</div>
+          <div class="message-content">
+            <div class="meta"><span class="name">Jules</span><span class="time">17:48</span></div>
+            <p class="message-text"><span class="mention">@mila.stone</span> I’ve uploaded the final review deck with the updated customer narrative and migration path.</p>
+            <div class="media-card">
+              <div class="media-preview">Review Deck.pdf</div>
+            </div>
+            <div class="reaction-row">
+              <button type="button" class="reaction-badge">👀 11</button>
+            </div>
+          </div>
+          <div class="message-actions">
+            <button type="button">↩</button>
+            <button type="button">❤</button>
+            <button type="button">⋯</button>
+          </div>
+        </article>
+
+        <div class="unread-divider"><span>Unread</span></div>
+
+        <article class="message-row group">
+          <div class="avatar lg avatar-gradient-4">LM</div>
+          <div class="message-content">
+            <div class="meta"><span class="name">Lina</span><span class="time">18:03</span></div>
+            <p class="message-text">I’ll be online for the product walkthrough at 6:15. Bring your questions and edge cases.</p>
+          </div>
+          <div class="message-actions">
+            <button type="button">↩</button>
+            <button type="button">❤</button>
+            <button type="button">⋯</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="composer-wrap">
+        <div class="composer-toolbar">
+          <button class="icon-btn" type="button">＋</button>
+          <button class="icon-btn" type="button">😊</button>
+          <button class="icon-btn" type="button">📎</button>
+          <button class="icon-btn" type="button">🎤</button>
+        </div>
+        <div class="composer-area">
+          <textarea rows="1" placeholder="Message #product-updates"></textarea>
+          <div class="composer-actions">
+            <button class="btn btn-ghost" type="button">Add file</button>
+            <button class="btn btn-primary" type="button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="member-panel">
+    <div class="panel-header">
+      <h3>Members</h3>
+      <button class="chip ghost">18 online</button>
+    </div>
+
+    <div class="member-list">
+      <div class="member-item online">
+        <div class="avatar sm avatar-gradient-1">AN</div>
+        <div>
+          <strong>Anika</strong>
+          <small>PM</small>
+        </div>
+      </div>
+      <div class="member-item online">
+        <div class="avatar sm avatar-gradient-2">JR</div>
+        <div>
+          <strong>Jules</strong>
+          <small>Design</small>
+        </div>
+      </div>
+      <div class="member-item online">
+        <div class="avatar sm avatar-gradient-3">LM</div>
+        <div>
+          <strong>Lina</strong>
+          <small>Growth</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-block">
+      <div class="panel-header small">
+        <h4>Pinned</h4>
+      </div>
+      <div class="pinned-card">
+        <span class="pin-label">Pinned</span>
+        <p>Customer retention roadmap is live for review in the launch room.</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<div class="profile-popover">
+  <div class="profile-header">
+    <div class="avatar xl avatar-gradient-3">MS</div>
+    <div>
+      <strong>Mila Stone</strong>
+      <small>@mila.stone</small>
+    </div>
+  </div>
+  <div class="profile-stats">
+    <div><strong>214</strong><span>Posts</span></div>
+    <div><strong>18.6k</strong><span>Followers</span></div>
+    <div><strong>182</strong><span>Following</span></div>
+  </div>
+</div>
+
+<div class="search-panel">
+  <div class="search-head">
+    <h3>Search</h3>
+    <button class="icon-btn" type="button">✕</button>
+  </div>
+  <input type="text" class="search-input" placeholder="Search messages, files, members" />
+  <div class="search-results">
+    <div class="search-result"><div class="avatar sm avatar-gradient-1">AN</div><div><strong>Launch deck</strong><small>Product updates</small></div></div>
+    <div class="search-result"><div class="avatar sm avatar-gradient-2">JR</div><div><strong>Jules</strong><small>Design notes</small></div></div>
+  </div>
+</div>
+{% endblock %}
